@@ -1,0 +1,36 @@
+---
+status: ok
+source: techcrunch
+sortBy: top
+articles:
+- author: Matthew Lynley
+  title: A critical metric for Alphabet’s success is suddenly showing signs of life
+  description: Alphabet delivered a knockout quarter today, handily beating the estimates
+    from Wall Street — but, perhaps more importantly, showing actual growth in a..
+  url: https://techcrunch.com/2017/10/26/a-critical-metric-for-alphabets-success-is-suddenly-showing-signs-of-life/
+  urlToImage: https://tctechcrunch2011.files.wordpress.com/2016/07/a3c4057e7d804c79b4bfb3278f4afced.jpg
+  publishedAt: '2017-10-26T20:20:19Z'
+- author: Frederic Lardinois
+  title: Microsoft easily beats the Street as its cloud run rate passes $20B a year early
+  description: Microsoft today announced its quarterly earnings for its first financial
+    quarter of 2018 (yes, I know it's early, but that's how Microsoft's financial..
+  url: https://techcrunch.com/2017/10/26/microsoft-easily-beats-the-street-as-its-cloud-run-rate-passes-20b-a-year-early/
+  urlToImage: https://tctechcrunch2011.files.wordpress.com/2014/04/microsoft-earnings.jpg
+  publishedAt: '2017-10-26T20:10:58Z'
+- author: Romain Dillet
+  title: Station combines all your messy web apps into a single app
+  description: Meet Station, a startup that was created by startup studio eFounders.
+    Station has been working on the only work app you need. It combines all the services
+    you..
+  url: https://techcrunch.com/2017/10/26/station-combines-all-your-messy-web-apps-into-a-single-app/
+  urlToImage: https://tctechcrunch2011.files.wordpress.com/2017/03/gettyimages-683738775.jpg
+  publishedAt: '2017-10-26T16:23:58Z'
+- author: Sarah Perez
+  title: eBay launches visual search tools that let you shop using photos from your
+    phone or web
+  description: eBay today is launching two new visual search tools that will allow
+    online shoppers to use photos they snap, have saved on their phone, or even those
+    they..
+  url: https://techcrunch.com/2017/10/26/ebay-launches-visual-search-tools-that-let-you-shop-using-photos-from-your-phone-or-web/
+  urlToImage: https://tctechcrunch2011.files.wordpress.com/2017/07/ebay-image-search.jpg
+  publishedAt: '2017-10-26T15:00:54Z'
