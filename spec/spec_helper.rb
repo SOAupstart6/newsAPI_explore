@@ -12,15 +12,11 @@ require 'webmock'
 
 require_relative 'test_load_all'
 
-USERNAME = 'soumyaray'.freeze
-REPO_NAME = 'YPBT-app'.freeze
-CASSETTES_FOLDER = 'spec/fixtures/cassettes'.freeze
-
 VCR.configure do |c|
   c.cassette_library_dir = CASSETTES_FOLDER
   c.hook_into :webmock
 
-  github_token = app.config.gh_token
-  c.filter_sensitive_data('<GITHUB_TOKEN>') { github_token }
-  c.filter_sensitive_data('<GITHUB_TOKEN_ESC>') { CGI.escape(github_token) }
+  api_token = app.token
+  c.filter_sensitive_data('<API_TOKEN>') { api_token }
+  c.filter_sensitive_data('<API_TOKEN_ESC>') { CGI.escape(api_token) }
 end
