@@ -4,5 +4,5 @@ require 'rack/test'
 include Rack::Test::Methods
 
 def app
-  NewsPraise::Api
+  CodePraise::Api
 end
