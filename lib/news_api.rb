@@ -40,7 +40,7 @@ module NewsPraise
           
         def self.news_path(path,token)
            "https://newsapi.org/v1/articles?source="+path+"&sortBy=top&apiKey="+token
-            
+        end 
 
         def call_url(url)
            response = HTTP.headers('Accept' => 'application/json').get(url)
