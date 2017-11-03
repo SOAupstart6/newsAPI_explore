@@ -1,5 +1,5 @@
 #
-module NewsPraise
+module NewsCollect
    module NewsApi
       class Api
         module Errors

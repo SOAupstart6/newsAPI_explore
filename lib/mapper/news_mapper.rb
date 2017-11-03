@@ -1,4 +1,4 @@
-module NewsPraise
+module NewsCollect
   module NewsApi
     class NewsMapper
         def initialize(gateway)
