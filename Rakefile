@@ -14,6 +14,11 @@ task :console do
   sh 'pry -r ./spec/test_load_all'
 end
 
+desc 'test web api'
+task :spec_api do
+  sh 'ruby spec/news_spec.rb'
+end
+
 desc 'delete cassette fixtures'
 task :rmvcr do
   sh 'rm spec/fixtures/cassettes/*.yml' do |ok, _|
