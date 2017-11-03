@@ -3,6 +3,7 @@ require 'yaml'
 require 'json'
 config = YAML::safe_load(File.read('config/secret.yml'))
 
+# Tech news source
 source = [
   'ars-technica',
   'engadget',
@@ -16,14 +17,12 @@ source = [
   'the-verge',
   'wired-de'
 ]
-tmp = {}
-result = {}
+
 response = {}
-i = 0
+result = {}
 
 def newsSource(token, source)
 	"https://newsapi.org/v1/articles?source="+source+"&sortBy=top&apiKey="+token
-	
 end
 
 def call_url(url)

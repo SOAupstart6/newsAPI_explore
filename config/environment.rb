@@ -3,7 +3,7 @@
 require 'roda'
 require 'econfig'
 
-module TranslateThis
+module NewsCollect
   # Configuration for the API
   class Api < Roda
     plugin :environments
