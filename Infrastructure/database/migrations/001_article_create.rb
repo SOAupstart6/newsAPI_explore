@@ -4,11 +4,13 @@ Sequel.migration do
   change do
     create_table(:article) do
       primary_key :id
-
+      String :source
       String :title
-      String :descr
+      String :description
       String :url
-      String :img_url
+      String :urlToImage
+      String :author
+      String :publishedAt
       DateTime :created_at
       DateTime :updated_at
     end
