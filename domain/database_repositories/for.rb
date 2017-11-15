@@ -1,5 +1,5 @@
 module NewsCollect
-   module Repositories
+   module theNews
     For = {
         Entity::News_sources  => News_sources,
       }.freeze
