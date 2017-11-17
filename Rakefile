@@ -50,7 +50,7 @@ namespace :db do
   require 'sequel' # TODO: remove after create orm
 
   Sequel.extension :migration
-  app = CodePraise::Api
+  app = NewsCollect::Api
 
   desc 'Run migrations'
   task :migrate do
