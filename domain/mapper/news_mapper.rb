@@ -23,6 +23,7 @@ module NewsCollect
            
            def build_entity
             NewsPraise::Entity::New(
+            id: nil,
             source: source,
             sortBy: sortBy,
             author: author,
