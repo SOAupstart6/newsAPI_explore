@@ -22,7 +22,7 @@ module NewsCollect
             def self.create(entity)
                 raise 'news already exists' if find(entity)
                 
-                db_news: Database::NewsOrm.create(
+                db_news = Database::NewsOrm.create(
                 source: entity.source,
                 title: entity.title,
                 description: entity.description,
@@ -32,7 +32,7 @@ module NewsCollect
                 publishedAt: entity.publishedAt
                 )
                 
-                rebuild_entity(db_news)
+                self.rebuild_entity(db_news)
             end
 
             def self.rebuild_entity(db_record)

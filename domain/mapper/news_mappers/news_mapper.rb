@@ -1,8 +1,10 @@
 module NewsCollect
   module NewsApi
     class NewsMapper
-        def initialize(gateway)
-          @gateway = gateway
+        def initialize(config, gateway_class = NewsApi::Api)
+          @config = config
+          @gateway_class = gateway_class 
+          @gateway = @gateway_class.new(@config.token)
         end
 
         def load(source)
@@ -11,17 +13,17 @@ module NewsCollect
         end
 
         def build_entity(news_data)
-          NewsMapper.new(news_data,gateway).build_entity
+            Datamapper.new(news_data).build_entity
         end
        
         class Datamapper
-           def initialize(news_data,gateway)
-            @news_data = news_data
-            @gateway =gateway
+           def initialize(news_data)
+               @news_data = news_data
            end
            
            def build_entity
             NewsPraise::Entity::New(
+            id: nil,
             source: source,
             sortBy: sortBy,
             author: author,

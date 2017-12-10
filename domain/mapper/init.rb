@@ -1,3 +1,5 @@
-# frozen_string_literal: false
+folders = %w[news_mappers git_mappers blame_mappers]
 
-require_relative 'news_mapper.rb'
+folders.each do |folder|
+  require_relative "#{folder}/init.rb"
+end

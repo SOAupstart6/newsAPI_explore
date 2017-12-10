@@ -3,6 +3,7 @@ require 'dry-struct'
 module NewsCollect
     module Entity
         class News < Dry::Struct
+            attribute :id, Types::Int.optional
             attribute :source, Types::Strict::String
             attribute :sortBy, Types::Strict::String
             attribute :author, Types::Strict::String
