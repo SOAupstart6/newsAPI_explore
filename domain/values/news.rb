@@ -1,0 +1,1 @@
+News = Struct.new :news

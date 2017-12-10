@@ -1,4 +1,3 @@
-# frozen_string_literal: false
 require 'dry-types'
 
 module NewsCollect
@@ -10,4 +9,6 @@ module NewsCollect
   end
 end
 
-require_relative 'news_Entity.rb'
+Dir.glob("#{File.dirname(__FILE__)}/*.rb").each do |file|
+  require file
+end

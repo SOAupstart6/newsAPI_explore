@@ -12,7 +12,7 @@ module NewsCollect
     Econfig.env = environment.to_s
     Econfig.root = '.'
 
-    configure :development do
+    configure :development, :test do
       # Allows running reload! in pry to restart entire app
       def self.reload!
         exec 'pry -r ./spec/test_load_all'
@@ -20,7 +20,7 @@ module NewsCollect
     end
 
     configure :development, :test do
-      ENV['DATABASE_URL'] = 'sqlite://' + config.db_filename
+      ENV['DATABASE_URL'] = 'sqlite://' + config.DB_FILENAME
     end
 
     configure :production do

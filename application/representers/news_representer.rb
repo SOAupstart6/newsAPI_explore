@@ -1,5 +1,5 @@
-module NewCollect
-    class SourceRepresenter < Roar::Decorator
+module NewsCollect
+    class NewsRepresenter < Roar::Decorator
         include Roar::JSON
         
         property :source

@@ -10,7 +10,7 @@ module NewsCollect
             if news
                 Right(Result.new(:ok, news))
             else
-                Light(Result.new(:not found, 'news not found'))
+                Left(Result.new(:not found, 'news not found'))
             end
         end
     end
